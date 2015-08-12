@@ -13,6 +13,12 @@ When searching strings, by default it does a partial, case-insensitive match. (W
 
 ## Usage
 
+Require module
+
+```
+var mongooseApiQuery = require('mongoose-api-query');
+```
+
 Apply the plugin to any schema in the usual Mongoose fashion:
 
 ```
