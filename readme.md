@@ -1,4 +1,6 @@
 ## Overview
+This repository is fork from ajb/mongoose-api-query (https://github.com/ajb/mongoose-api-query)
+
 If you use Mongoose to help serve results for API calls, you might be used to handling calls like:
 
     /monsters?color=purple&eats_humans=true
@@ -80,11 +82,17 @@ geo near, with (optional) radius in miles:
 /monsters?latlon={near}38.8977,-77.0366,10
 ```
 
-##### Pagination
+##### Pagination (new method)
 
 ```
 /monsters?page=2
 /monsters?page=4&per_page=25 		// per_page defaults to 10
+```
+
+##### Pagination (traditional, take priority over per_page & page)
+
+```
+/monsters?limit=10&skip=5 
 ```
 
 ##### Sorting results
@@ -92,6 +100,13 @@ geo near, with (optional) radius in miles:
 ```
 /monsters?sort_by=name
 /monsters?sort_by=name,desc
+```
+
+##### Select props
+```
+/monsters?select=name
+/monsters?select=monster_id,name
+/monsters?select=monster_id,-name
 ```
 
 ##### Schemaless search
@@ -129,7 +144,7 @@ This is a list of the optional search operators you can use for each SchemaType.
 
 
 
-## To run tests
+## To run tests (example folder)
 
 ```shell
 node load_fixtures.js
