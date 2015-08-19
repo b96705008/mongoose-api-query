@@ -37,6 +37,13 @@ Or pass a callback in and it will run `.exec` for you:
 Monster.apiQuery(req.query, function(err, monsters){...
 ```
 
+You can replace the find condtions by your own defined one or mongoose query object
+
+```
+Monster.apiQuery(req.query, {findCond: {...}})....
+Monster.apiQuery(req.query, {query: your_query})....
+```
+
 ## Examples
 
 `t`, `y`, and `1` are all aliases for `true`:
