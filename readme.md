@@ -88,6 +88,11 @@ geo near, with (optional) radius in miles:
 /monsters?latlon={near}38.8977,-77.0366,10
 ```
 
+##### $or & $and query (val should be processed by JSON stringify)
+```
+/monsters?$or=[{"name":"Big Purple People Eater"},{"monster_object_id": "530088897c979cdb49475d9b"}]
+```
+
 ##### Pagination (new method)
 
 ```
