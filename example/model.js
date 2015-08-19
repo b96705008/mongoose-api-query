@@ -12,6 +12,7 @@ var monsterSchema = new mongoose.Schema({
     calories: Number
   })],
   loc: Array,
+  tags: [String],
   data: {}
 });
 
