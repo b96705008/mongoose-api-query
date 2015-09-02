@@ -82,6 +82,13 @@ Numeric operators:
 /monsters?monster_id={gte}30&age={lt}50
 ```
 
+Date support
+
+```
+/monsters?start_time={gte}1441195596284 //unix timestamp
+/monsters?start_time={gte}Thu Sep 03 2015 06:06:36 GMT+0800 (CST) //date string
+```
+
 Combine operators:
 
 ```
