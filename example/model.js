@@ -13,7 +13,8 @@ var monsterSchema = new mongoose.Schema({
   })],
   loc: Array,
   tags: [String],
-  data: {}
+  data: {},
+  start_time: Date
 });
 
 monsterSchema.index({'loc':'2d'});
