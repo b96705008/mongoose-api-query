@@ -15,14 +15,19 @@
     }
   ],
   "description": "Given a Mongoose model and an array of URI params, construct a query for use in a search API.",
-  "keywords": ["API", "mongoose", "search", "parameters"],
+  "keywords": [
+    "API",
+    "mongoose",
+    "search",
+    "parameters"
+  ],
   "scripts": {
     "pretest": "node load_fixtures.js; node app.js",
     "test": "mocha"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/b96705008/mongoose-api-query.git"
+    "type": "git",
+    "url": "https://github.com/b96705008/mongoose-api-query.git"
   },
   "devDependencies": {
     "express": "3.0.0rc3",
@@ -31,6 +36,7 @@
     "expect.js": "*"
   },
   "dependencies": {
+    "lodash": "^3.10.1",
     "mongoose": "~4.1.2"
   },
   "homepage": "https://github.com/ajb/mongoose-api-query"

@@ -7,6 +7,7 @@ module.exports = function(req, res){
 
 	// Monster.apiQuery(req.query, {
 	// 	findCond: {name: 'Big Purple People Eater'}
+	// 	,combine: 'merge'
 	// }).exec(function (err, monsters) {
 	//  	res.send(monsters);
 	// });
