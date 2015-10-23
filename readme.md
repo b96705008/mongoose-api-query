@@ -124,7 +124,8 @@ geo near, with (optional) radius in miles:
 
 ```
 /monsters?sort_by=name
-/monsters?sort_by=name,desc
+/monsters?sort_by=-name //name desc
+/monsters?sort_by=-name,start_date //sort by multiple path in order priority
 ```
 
 ##### Select props
